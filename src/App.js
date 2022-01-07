@@ -28,6 +28,7 @@ function App() {
           <Route path="/teams/:id" exact component={Team} />
           <Route path="/players" exact component={Players} />
           <Route path="/players/:id" exact component={Player} />
+          <Route path="/" exact />
         </Switch>
       </BrowserRouter>
     </div>
