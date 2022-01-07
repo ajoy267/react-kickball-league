@@ -16,12 +16,13 @@ export default function Team(props) {
     fetchData();
   }, [id]);
   if (loading) {
-    return <h1>hello</h1>;
+    return <h1>Loading</h1>;
   }
   return (
     <div>
       <p>{team.name}</p>
-      <p>{team.city}</p>
+      <p>Location: {team.city}</p>
+      <p>Players:</p>
       <TeamDetails team={team} />
     </div>
   );

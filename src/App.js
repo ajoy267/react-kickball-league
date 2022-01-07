@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header>
-          <NavLink to="/home" exact>
+          <NavLink to="/" exact>
             Home
           </NavLink>
           <NavLink to="/teams" exact>
@@ -23,12 +23,11 @@ function App() {
           </NavLink>
         </header>
         <Switch>
-          <Route path="/home" exact component={Home} />
           <Route path="/teams" exact component={Teams} />
           <Route path="/teams/:id" exact component={Team} />
           <Route path="/players" exact component={Players} />
           <Route path="/players/:id" exact component={Player} />
-          <Route path="/" exact />
+          <Route path="/" exact component={Home} />
         </Switch>
       </BrowserRouter>
     </div>

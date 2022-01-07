@@ -5,7 +5,7 @@ export default function PlayerDetails({ player }) {
     <div>
       <p>{player.name}</p>
       <p>Position: {player.position}</p>
-      <p>Team: {player.team_id}</p>
+      <p>Team ID: {player.team_id}</p>
     </div>
   );
 }
